@@ -1,0 +1,1 @@
+INSERT INTO `kartya` (`UID`, `kartyaTipus`) VALUES ('1', 'teszt');
