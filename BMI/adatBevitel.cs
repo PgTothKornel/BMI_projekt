@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO.Ports;
+
 namespace BMI
 {
     public partial class adatBevitel : Form
@@ -24,6 +24,7 @@ namespace BMI
             lbl.Dock = DockStyle.Fill;
             lbl.TextAlign = ContentAlignment.MiddleCenter;
             this.Controls.Add(lbl);
+
         }
     }
 }

@@ -1,0 +1,25 @@
+**TESTZSÍR
+**--------------------------------
+Férfiak esetén
+40% feletti testzsír – Extrém túlsúly: Számos egészségügyi problémát vonhat maga után, mint például cukorbetegség, agyvérzés, szívproblémák stb.
+20% feletti testzsír – Közepes túlsúly: Van némi zsírréteg, az izmok nem láthatóak.
+15% feletti testzsír – Normális, átlagos érték: Az izomzat enyhén látszódik, leginkább a vállnál és a felkaron, míg a hasizmok nem igazán láthatóak.
+12% feletti testzsír – Fitt: A mellkason, a háton és a hason is látszódnak az izmok.
+6% feletti testzsír – Atletikus: A karon, a mellkason, a lábakon, a hason és a háton is jól kirajzolódnak az izmok, és az erek is kidudorodnak.
+2% feletti testzsír – Esszenciális testzsír: Minimális a testzsír, mindössze annyi van, amennyi szervezetünk egészséghez működéséhez szükséges.
+
+Nők esetén
+45% feletti testzsír – Extrém túlsúly: Számos egészségügyi problémát vonhat maga után, mint például cukorbetegség, agyvérzés, szívproblémák stb.
+26% feletti testzsír – Közepes túlsúly: Van némi zsírréteg, az izmok nem láthatóak.
+20% feletti testzsír – Normális, átlagos érték: Az izomzat enyhén látszódik, leginkább a vállnál és a felkaron, míg a hasizmok nem igazán láthatóak.
+17% feletti testzsír – Fitt: A mellkason, a háton és a hason is látszódnak az izmok.
+14% feletti testzsír – Atletikus: A karon, a mellkason, a lábakon, a hason és a háton is jól kirajzolódnak az izmok, az erek is kidudorodnak.
+10% feletti testzsír – Esszenciális testzsír: Minimális a testzsír, mindössze annyi van, ami szükséges a szervezetünk egészséghez működéséhez. Néha kimarad a menstruáció.
+
+BMI 35.1 - Súlyos elhízás
+BMI 30.1 - Elhízás
+BMI 25.1 - Túlsúly
+BMI 20.1 - Normál
+BMI 18.1 - Sovány
+BMI 18.1 - Kóros soványság
+
