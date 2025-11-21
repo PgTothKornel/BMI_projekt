@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:adatBevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\kozos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:kozos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:adatKiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "kozos.cs",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\kozos.cs",
+              "RelativeDocumentMoniker": "kozos.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\kozos.cs",
+              "RelativeToolTip": "kozos.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:53:30.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "adatKiiras.cs",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeDocumentMoniker": "adatKiiras.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeToolTip": "adatKiiras.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAWwBYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:40:26.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "adatKiiras.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeDocumentMoniker": "adatKiiras.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatKiiras.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BMI\\adatKiiras.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:40:24.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "adatBevitel.cs",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeDocumentMoniker": "adatBevitel.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeToolTip": "adatBevitel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:40:07.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "adatBevitel.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeDocumentMoniker": "adatBevitel.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatBevitel.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BMI\\adatBevitel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:39:56.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:36:41.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Zutasi\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BMI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T16:35:51.031Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+SerialPort port = new SerialPort("COM3", 9600);
+port.DataReceived += (s, e) =>
+{
+    string uid = port.ReadLine().Trim();
+    MessageBox.Show($"Beolvasott UID: {uid}");
+};
+port.Open();
