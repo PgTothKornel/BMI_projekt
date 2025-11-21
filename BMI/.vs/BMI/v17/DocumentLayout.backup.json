@@ -1,34 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zutasi\\Downloads\\BMI\\",
+  "WorkspaceRootPath": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\downloads\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\downloads\\bmi\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\kozos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:kozos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|c:\\users\\zutasi\\downloads\\bmi\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7C79998-A032-4C1E-8B94-27E5F5D0E253}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\downloads\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,95 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "kozos.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\kozos.cs",
-              "RelativeDocumentMoniker": "kozos.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\kozos.cs",
-              "RelativeToolTip": "kozos.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:53:30.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "adatKiiras.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatKiiras.cs",
+              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatKiiras.cs",
               "RelativeDocumentMoniker": "adatKiiras.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatKiiras.cs",
+              "ToolTip": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatKiiras.cs",
               "RelativeToolTip": "adatKiiras.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAWwBYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:40:26.635Z",
+              "WhenOpened": "2025-11-21T09:01:44.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "adatKiiras.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatKiiras.cs",
-              "RelativeDocumentMoniker": "adatKiiras.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatKiiras.cs [Design]",
-              "RelativeToolTip": "adatKiiras.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:40:24.894Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "adatBevitel.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatBevitel.cs",
+              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatBevitel.cs",
               "RelativeDocumentMoniker": "adatBevitel.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatBevitel.cs",
+              "ToolTip": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatBevitel.cs",
               "RelativeToolTip": "adatBevitel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAWwBUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:40:07.17Z",
+              "WhenOpened": "2025-11-21T09:01:23.795Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "adatBevitel.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatBevitel.cs",
-              "RelativeDocumentMoniker": "adatBevitel.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\adatBevitel.cs [Design]",
-              "RelativeToolTip": "adatBevitel.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:39:56.04Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\Form1.cs",
+              "ToolTip": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA9wDwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAjwEIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:36:41.442Z",
+              "WhenOpened": "2025-11-21T08:58:42.602Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Downloads\\BMI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Downloads\\BMI\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T16:35:51.031Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

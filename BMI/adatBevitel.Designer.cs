@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // adatBevitel
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "adatBevitel";
             this.Text = "adatBevitel";
-            this.Load += new System.EventHandler(this.adatBevitel_Load);
-            this.ResumeLayout(false);
-
         }
 
         #endregion
