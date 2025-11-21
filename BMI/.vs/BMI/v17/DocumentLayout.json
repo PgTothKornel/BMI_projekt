@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\tothkornel\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\tothkornel\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,27 +32,27 @@
               "RelativeDocumentMoniker": "adatBevitel.cs",
               "ToolTip": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
               "RelativeToolTip": "adatBevitel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAhwHMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T09:49:24.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "adatBevitel.Designer.cs",
               "DocumentMoniker": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
               "RelativeDocumentMoniker": "adatBevitel.Designer.cs",
               "ToolTip": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
               "RelativeToolTip": "adatBevitel.Designer.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwC0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T09:49:20.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "adatBevitel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
               "RelativeDocumentMoniker": "adatBevitel.cs",

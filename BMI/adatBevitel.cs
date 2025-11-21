@@ -15,8 +15,10 @@ namespace BMI{
 
         public adatBevitel()
         {
-            alapGombok();
             InitializeComponent();
+            alapGombok();
+
+            
 
             try
             {
@@ -58,38 +60,17 @@ namespace BMI{
 
         private void alapGombok()
         {
-            System.Windows.Forms.Button btn_input = new System.Windows.Forms.Button();
-            System.Windows.Forms.Button btn_output = new System.Windows.Forms.Button();
             System.Windows.Forms.Button btn_exit = new System.Windows.Forms.Button();
             System.Windows.Forms.Button btn_vissza = new System.Windows.Forms.Button();
-
-            // 
-            // btn_input
-            // 
-            btn_input.Location = new System.Drawing.Point(13, 13);
-            btn_input.Name = "btn_input";
-            btn_input.Size = new System.Drawing.Size(128, 40);
-            btn_input.TabIndex = 0;
-            btn_input.Text = "Bevitel";
-            btn_input.UseVisualStyleBackColor = true;
-            btn_input.Click += new System.EventHandler(btn_input_Click);
-            // 
-            // btn_output
-            // 
-            btn_output.Location = new System.Drawing.Point(157, 13);
-            btn_output.Name = "btn_output";
-            btn_output.Size = new System.Drawing.Size(128, 40);
-            btn_output.TabIndex = 1;
-            btn_output.Text = "Kiolvasás";
-            btn_output.UseVisualStyleBackColor = true;
 
             btn_exit = new System.Windows.Forms.Button();
             btn_vissza = new System.Windows.Forms.Button();
             // 
             // btn_exit
             // 
+            btn_exit.Dock = System.Windows.Forms.DockStyle.Fill;
             btn_exit.BackColor = System.Drawing.Color.Red;
-            btn_exit.Location = new System.Drawing.Point(1097, 642);
+            btn_exit.Location = new System.Drawing.Point(700, 400);
             btn_exit.Name = "btn_exit";
             btn_exit.Size = new System.Drawing.Size(91, 38);
             btn_exit.TabIndex = 0;
@@ -106,15 +87,15 @@ namespace BMI{
             btn_vissza.Text = "Vissza";
             btn_vissza.UseVisualStyleBackColor = true;
             btn_vissza.Click += new System.EventHandler(vissza);
+            btn_vissza.Dock = System.Windows.Forms.DockStyle.Fill;
 
-            Controls.Add(btn_input);
-            Controls.Add(btn_output);
-            Controls.Add(btn_exit);
-            Controls.Add(btn_vissza);
+            tableLayoutPanel1.Controls.Add(btn_exit, 4 , 7);
+            tableLayoutPanel1.Controls.Add(btn_vissza, 3, 7);
+            input_generalas();
         }
 
 
-        private void btn_input_Click(object sender, EventArgs e)
+        private void input_generalas()
         {
             System.Windows.Forms.Button btn_hozzaad = new System.Windows.Forms.Button();
             System.Windows.Forms.Button btn_kereses = new System.Windows.Forms.Button();
@@ -124,6 +105,7 @@ namespace BMI{
             // 
             // btn_hozzaad
             // 
+            btn_hozzaad.Dock = System.Windows.Forms.DockStyle.Fill;
             btn_hozzaad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             btn_hozzaad.Location = new System.Drawing.Point(18, 158);
             btn_hozzaad.Name = "btn_hozzaad";
@@ -141,12 +123,13 @@ namespace BMI{
             btn_kereses.TabIndex = 1;
             btn_kereses.Text = "Keresés";
             btn_kereses.UseVisualStyleBackColor = true;
+            btn_kereses.Dock = System.Windows.Forms.DockStyle.Fill;
             btn_kereses.Click += new System.EventHandler(kereses_menu);
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             label1.Location = new System.Drawing.Point(12, 404);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(581, 37);
@@ -155,6 +138,7 @@ namespace BMI{
             // 
             // textBox1
             // 
+            textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             textBox1.Location = new System.Drawing.Point(18, 463);
             textBox1.Name = "textBox1";
@@ -163,6 +147,7 @@ namespace BMI{
             // 
             // label2
             // 
+            label2.Dock = System.Windows.Forms.DockStyle.Fill;
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             label2.Location = new System.Drawing.Point(12, 589);
@@ -172,19 +157,16 @@ namespace BMI{
             label2.Text = "Létezik ilyen ember!";
             label2.Visible = false;
 
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(btn_kereses);
-            Controls.Add(btn_hozzaad);
+            tableLayoutPanel1.Controls.Add(label2, 1, 5);
+            tableLayoutPanel1.Controls.Add(textBox1, 1, 3);
+            tableLayoutPanel1.Controls.Add(label1, 0 , 3);
+            tableLayoutPanel1.Controls.Add(btn_kereses, 1, 4);
+            tableLayoutPanel1.Controls.Add(btn_hozzaad, 0, 0);
             InitializeComponent();
         }
 
         private void hozzaad_menu(object sender, EventArgs e)
         {
-
-
-
             //System.Windows.Forms.Button btn_raKeres = new System.Windows.Forms.Button();
             System.Windows.Forms.Label label3 = new System.Windows.Forms.Label();
             System.Windows.Forms.TextBox tb_om = new System.Windows.Forms.TextBox();
@@ -377,24 +359,24 @@ namespace BMI{
             rb_lany.UseVisualStyleBackColor = true;
 
 
-            //Controls.Add(btn_raKeres);
-            Controls.Add(rb_lany);
-            Controls.Add(rb_fiu);
-            Controls.Add(tb_kartya);
-            Controls.Add(label10);
-            Controls.Add(tb_osztaly);
-            Controls.Add(label9);
-            Controls.Add(tb_szuletes);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(tb_taj);
-            Controls.Add(label6);
-            Controls.Add(tb_lakcim);
-            Controls.Add(label5);
-            Controls.Add(tb_nev);
-            Controls.Add(label4);
-            Controls.Add(tb_om);
-            Controls.Add(label3);
+            //tableLayoutPanel1.Controls.Add(btn_raKeres);
+            tableLayoutPanel1.Controls.Add(rb_lany);
+            tableLayoutPanel1.Controls.Add(rb_fiu);
+            tableLayoutPanel1.Controls.Add(tb_kartya);
+            tableLayoutPanel1.Controls.Add(label10);
+            tableLayoutPanel1.Controls.Add(tb_osztaly);
+            tableLayoutPanel1.Controls.Add(label9, 4, 0);
+            tableLayoutPanel1.Controls.Add(tb_szuletes);
+            tableLayoutPanel1.Controls.Add(label8);
+            tableLayoutPanel1.Controls.Add(label7);
+            tableLayoutPanel1.Controls.Add(tb_taj);
+            tableLayoutPanel1.Controls.Add(label6);
+            tableLayoutPanel1.Controls.Add(tb_lakcim);
+            tableLayoutPanel1.Controls.Add(label5);
+            tableLayoutPanel1.Controls.Add(tb_nev);
+            tableLayoutPanel1.Controls.Add(label4);
+            tableLayoutPanel1.Controls.Add(tb_om);
+            tableLayoutPanel1.Controls.Add(label3);
             InitializeComponent();
         }
 
@@ -410,7 +392,7 @@ namespace BMI{
 
         private void vissza(object sender, EventArgs e)
         {
-            Controls.Clear();
+            tableLayoutPanel1.Controls.Clear();
 
             alapGombok();
             InitializeComponent();

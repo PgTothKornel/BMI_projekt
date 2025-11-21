@@ -48,3 +48,4 @@ C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\bin\Debug\System.Buffers.xm
 C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.SuggestedBindingRedirects.cache
 C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.Up2Date
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.adatBevitel.resources
