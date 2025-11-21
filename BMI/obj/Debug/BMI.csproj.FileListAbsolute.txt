@@ -9,3 +9,14 @@ C:\Users\UtasiZalan\Downloads\BMI\obj\Debug\BMI.csproj.CoreCompileInputs.cache
 C:\Users\UtasiZalan\Downloads\BMI\obj\Debug\BMI.exe
 C:\Users\UtasiZalan\Downloads\BMI\obj\Debug\BMI.pdb
 C:\Users\UtasiZalan\Downloads\BMI\obj\Debug\BMI.exe.config
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\bin\Debug\BMI.exe.config
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\bin\Debug\BMI.exe
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\bin\Debug\BMI.pdb
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.AssemblyReference.cache
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.exe.config
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.Menu.resources
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.Properties.Resources.resources
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.GenerateResource.cache
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.CoreCompileInputs.cache
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.exe
+C:\Users\tothKornel\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.pdb

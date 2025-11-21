@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\",
+  "WorkspaceRootPath": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\downloads\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\tothkornel\\documents\\github\\bmi_projekt\\bmi\\metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\downloads\\bmi\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\downloads\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,46 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "adatKiiras.cs",
-              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatKiiras.cs",
-              "RelativeDocumentMoniker": "adatKiiras.cs",
-              "ToolTip": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatKiiras.cs",
-              "RelativeToolTip": "adatKiiras.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBQAAABAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "metodusok.cs",
+              "DocumentMoniker": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs",
+              "RelativeDocumentMoniker": "metodusok.cs",
+              "ToolTip": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs",
+              "RelativeToolTip": "metodusok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T09:01:44.004Z",
+              "WhenOpened": "2025-11-21T09:37:19.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "adatBevitel.cs",
-              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatBevitel.cs",
-              "RelativeDocumentMoniker": "adatBevitel.cs",
-              "ToolTip": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\adatBevitel.cs",
-              "RelativeToolTip": "adatBevitel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
+              "Title": "adatKiiras.cs",
+              "DocumentMoniker": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeDocumentMoniker": "adatKiiras.cs",
+              "ToolTip": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeToolTip": "adatKiiras.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T09:01:23.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T09:01:44.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "adatBevitel.cs",
+              "DocumentMoniker": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeDocumentMoniker": "adatBevitel.cs",
+              "ToolTip": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeToolTip": "adatBevitel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T09:01:23.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\UtasiZalan\\Downloads\\BMI\\Form1.cs",
+              "ToolTip": "C:\\Users\\tothKornel\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAjwEIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T08:58:42.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T08:58:42.602Z"
             }
           ]
         }
