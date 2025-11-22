@@ -2,3 +2,7 @@
 2025-11-22 11:38:55 - Adatbázis inicializálási hiba! - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%, magassag, suly, datum) VALUES
 -- 1 mérés (4 fő)
 (5,18,178,74,'2024-10-01' at line 2
+2025-11-22 19:37:05 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
+2025-11-22 19:37:26 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
+2025-11-22 19:38:58 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
+2025-11-22 19:39:10 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts

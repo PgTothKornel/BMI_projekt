@@ -20,6 +20,7 @@ namespace BMI
         public string dataConnectionString = "Server=localhost;Database=BMI_PROJEKT;User ID=root;Password=mysql;";
         public Form1(){
             InitializeComponent();
+            Text = "Egészségügyi Méréskezelő Rendszer";
             panelTop = new Panel();
             panelTop.Dock = DockStyle.Top;
             panelTop.Height = 58;
@@ -49,9 +50,8 @@ namespace BMI
 
             btnAdatBevitel.Click += new EventHandler(Betolt);
             btnAdatKiiras.Click += new EventHandler(Betolt);
-
+            this.MinimumSize = new Size(1100, 630);
             InitializeDatabase();
-
         }
         private void Betolt(object sender, EventArgs e){
             Button button = sender as Button;
@@ -107,7 +107,7 @@ namespace BMI
             catch (Exception e)
             {
                metodusok.hibaUzenet("Adatbázis inicializálási hiba!", e);
-                Application.Exit();
+                Environment.Exit(1);
             }
         }
         private void ExecuteSqlScript(string sqlScript, MySqlConnection connection)
