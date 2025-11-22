@@ -1,0 +1,4 @@
+2025-11-22 10:32:01 - Adatbázis inicializálási hiba! - Nem található a következő fájl: „C:\Users\Zutasi\Desktop\BMI\bin\Debug\kezdoFoglalasok.sql”.
+2025-11-22 11:38:55 - Adatbázis inicializálási hiba! - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%, magassag, suly, datum) VALUES
+-- 1 mérés (4 fő)
+(5,18,178,74,'2024-10-01' at line 2

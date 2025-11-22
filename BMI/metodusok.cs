@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace BMI
 {
     internal class metodusok{
-        public void hibaUzenet(string uzenet, Exception ex)
+        public static void hibaUzenet(string uzenet, Exception ex)
         {
             string hibaszoveg = "";
             if (ex != null)
