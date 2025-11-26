@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BMI{
     public partial class adatBevitel : Form{
@@ -89,15 +90,15 @@ namespace BMI{
             btn_vissza.Click += new System.EventHandler(vissza);
             btn_vissza.Dock = System.Windows.Forms.DockStyle.Fill;
 
-            tableLayoutPanel1.Controls.Add(btn_exit, 4 , 7);
-            tableLayoutPanel1.Controls.Add(btn_vissza, 3, 7);
+            tableLayoutPanel1.Controls.Add(btn_exit, 4 , 8);
+            tableLayoutPanel1.Controls.Add(btn_vissza, 3, 8);
             input_generalas();
         }
 
+        public System.Windows.Forms.Button btn_hozzaad = new System.Windows.Forms.Button();
 
         private void input_generalas()
         {
-            System.Windows.Forms.Button btn_hozzaad = new System.Windows.Forms.Button();
             System.Windows.Forms.Button btn_kereses = new System.Windows.Forms.Button();
             System.Windows.Forms.Label label1 = new System.Windows.Forms.Label();
             System.Windows.Forms.TextBox textBox1 = new System.Windows.Forms.TextBox();
@@ -162,31 +163,36 @@ namespace BMI{
             tableLayoutPanel1.Controls.Add(label1, 0 , 3);
             tableLayoutPanel1.Controls.Add(btn_kereses, 1, 4);
             tableLayoutPanel1.Controls.Add(btn_hozzaad, 0, 0);
-            InitializeComponent();
         }
 
         private void hozzaad_menu(object sender, EventArgs e)
         {
-            //System.Windows.Forms.Button btn_raKeres = new System.Windows.Forms.Button();
-            System.Windows.Forms.Label label3 = new System.Windows.Forms.Label();
-            System.Windows.Forms.TextBox tb_om = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.TextBox tb_nev = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.Label label4 = new System.Windows.Forms.Label();
-            System.Windows.Forms.TextBox tb_lakcim = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.Label label5 = new System.Windows.Forms.Label();
-            System.Windows.Forms.TextBox tb_taj = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.Label label6 = new System.Windows.Forms.Label();
-            System.Windows.Forms.Label label7 = new System.Windows.Forms.Label();
-            System.Windows.Forms.TextBox tb_szuletes = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.Label label8 = new System.Windows.Forms.Label();
-            System.Windows.Forms.TextBox tb_osztaly = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.Label label9 = new System.Windows.Forms.Label();
-            System.Windows.Forms.TextBox tb_kartya = new System.Windows.Forms.TextBox();
-            System.Windows.Forms.Label label10 = new System.Windows.Forms.Label();
-            System.Windows.Forms.RadioButton rb_fiu = new System.Windows.Forms.RadioButton();
-            System.Windows.Forms.RadioButton rb_lany = new System.Windows.Forms.RadioButton();
+            btn_hozzaad.Enabled = false;
+            //MessageBox.Show("teszt");
+            
+            label_hozzaad("OM azonosító:", 3, 0);
+            textbox_hozzaad("om", 4, 0);
 
+            label_hozzaad("Név:", 3, 1);
+            textbox_hozzaad("nev", 4, 1);
 
+            label_hozzaad("Lakcím:", 3, 2);
+            textbox_hozzaad("lakcim", 4, 2);
+
+            label_hozzaad("Taj szám:", 3, 3);
+            textbox_hozzaad("taj", 4, 3);
+
+            label_hozzaad("Nem:", 3, 4);
+            textbox_hozzaad("nem", 4, 4);
+            
+            label_hozzaad("Születési dátum:", 3, 5);
+            textbox_hozzaad("szuletes", 4, 5);
+
+            label_hozzaad("Osztály", 3, 6);
+            textbox_hozzaad("osztaly", 4, 6);
+
+            label_hozzaad("Kártya Típus", 3, 7);
+            textbox_hozzaad("kartya", 4, 7);
             // 
             // btn_raKeres
             //
@@ -197,187 +203,60 @@ namespace BMI{
             btn_raKeres.TabIndex = 1;
             btn_raKeres.Text = "Rákeres";
             btn_raKeres.UseVisualStyleBackColor = true;*/
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
+
+            /*
+                        // 
+                        // rb_fiu
+                        // 
+                        rb_fiu.AutoSize = true;
+                        rb_fiu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+                        rb_fiu.Location = new System.Drawing.Point(906, 314);
+                        rb_fiu.Name = "rb_fiu";
+                        rb_fiu.Size = new System.Drawing.Size(72, 33);
+                        rb_fiu.TabIndex = 16;
+                        rb_fiu.TabStop = true;
+                        rb_fiu.Text = "Fiú";
+                        rb_fiu.UseVisualStyleBackColor = true;
+                        // 
+                        // rb_lany
+                        // 
+                        rb_lany.AutoSize = true;
+                        rb_lany.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+                        rb_lany.Location = new System.Drawing.Point(984, 314);
+                        rb_lany.Name = "rb_lany";
+                        rb_lany.Size = new System.Drawing.Size(88, 33);
+                        rb_lany.TabIndex = 17;
+                        rb_lany.TabStop = true;
+                        rb_lany.Text = "Lány";
+                        rb_lany.UseVisualStyleBackColor = true;
+            */
+        }
+
+        private void label_hozzaad(string nev, int x, int y)
+        {
+            System.Windows.Forms.Label label3 = new System.Windows.Forms.Label();
+            label3.AutoSize = false;
+            label3.Dock = DockStyle.Fill;
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.Visible = true;
             label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label3.Location = new System.Drawing.Point(656, 50);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(224, 37);
+            label3.Name = nev.Replace(" ", "_");
             label3.TabIndex = 0;
-            label3.Text = "OM azonosító:";
-            // 
-            // tb_om
-            // 
-            tb_om.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_om.Location = new System.Drawing.Point(906, 47);
-            tb_om.Name = "tb_om";
-            tb_om.Size = new System.Drawing.Size(227, 44);
-            tb_om.TabIndex = 1;
-            // 
-            // tb_nev
-            // 
-            tb_nev.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_nev.Location = new System.Drawing.Point(906, 109);
-            tb_nev.Name = "tb_nev";
-            tb_nev.Size = new System.Drawing.Size(227, 44);
-            tb_nev.TabIndex = 3;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label4.Location = new System.Drawing.Point(656, 112);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(82, 37);
-            label4.TabIndex = 2;
-            label4.Text = "Név:";
-            // 
-            // tb_lakcim
-            // 
-            tb_lakcim.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_lakcim.Location = new System.Drawing.Point(906, 174);
-            tb_lakcim.Name = "tb_lakcim";
-            tb_lakcim.Size = new System.Drawing.Size(227, 44);
-            tb_lakcim.TabIndex = 5;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label5.Location = new System.Drawing.Point(656, 177);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(128, 37);
-            label5.TabIndex = 4;
-            label5.Text = "Lakcím:";
-            // 
-            // tb_taj
-            // 
-            tb_taj.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_taj.Location = new System.Drawing.Point(906, 242);
-            tb_taj.Name = "tb_taj";
-            tb_taj.Size = new System.Drawing.Size(227, 44);
-            tb_taj.TabIndex = 7;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label6.Location = new System.Drawing.Point(656, 245);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(170, 37);
-            label6.TabIndex = 6;
-            label6.Text = "TAJ szám:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label7.Location = new System.Drawing.Point(656, 314);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(94, 37);
-            label7.TabIndex = 8;
-            label7.Text = "Nem:";
-            // 
-            // tb_szuletes
-            // 
-            tb_szuletes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_szuletes.Location = new System.Drawing.Point(906, 373);
-            tb_szuletes.Name = "tb_szuletes";
-            tb_szuletes.Size = new System.Drawing.Size(227, 44);
-            tb_szuletes.TabIndex = 11;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label8.Location = new System.Drawing.Point(656, 376);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(253, 37);
-            label8.TabIndex = 10;
-            label8.Text = "Születési dátum:";
-            // 
-            // tb_osztaly
-            // 
-            tb_osztaly.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_osztaly.Location = new System.Drawing.Point(906, 438);
-            tb_osztaly.Name = "tb_osztaly";
-            tb_osztaly.Size = new System.Drawing.Size(227, 44);
-            tb_osztaly.TabIndex = 13;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label9.Location = new System.Drawing.Point(656, 441);
-            label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(132, 37);
-            label9.TabIndex = 12;
-            label9.Text = "Osztály:";
-            // 
-            // tb_kartya
-            // 
-            tb_kartya.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            tb_kartya.Location = new System.Drawing.Point(906, 504);
-            tb_kartya.Name = "tb_kartya";
-            tb_kartya.Size = new System.Drawing.Size(227, 44);
-            tb_kartya.TabIndex = 15;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            label10.Location = new System.Drawing.Point(656, 507);
-            label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(195, 37);
-            label10.TabIndex = 14;
-            label10.Text = "Kártya típus:";
-            // 
-            // rb_fiu
-            // 
-            rb_fiu.AutoSize = true;
-            rb_fiu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            rb_fiu.Location = new System.Drawing.Point(906, 314);
-            rb_fiu.Name = "rb_fiu";
-            rb_fiu.Size = new System.Drawing.Size(72, 33);
-            rb_fiu.TabIndex = 16;
-            rb_fiu.TabStop = true;
-            rb_fiu.Text = "Fiú";
-            rb_fiu.UseVisualStyleBackColor = true;
-            // 
-            // rb_lany
-            // 
-            rb_lany.AutoSize = true;
-            rb_lany.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            rb_lany.Location = new System.Drawing.Point(984, 314);
-            rb_lany.Name = "rb_lany";
-            rb_lany.Size = new System.Drawing.Size(88, 33);
-            rb_lany.TabIndex = 17;
-            rb_lany.TabStop = true;
-            rb_lany.Text = "Lány";
-            rb_lany.UseVisualStyleBackColor = true;
+            label3.Text = nev;
 
+            tableLayoutPanel1.Controls.Add(label3, x, y);
+        }
+        private void textbox_hozzaad(string nev, int x, int y)
+        {
+            System.Windows.Forms.TextBox textBox = new System.Windows.Forms.TextBox();
+            textBox.AutoSize = false;
+            textBox.Dock = DockStyle.Fill;
+            textBox.Visible = true;
+            textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            textBox.Name = nev.Replace(" ", "_");
+            textBox.TabIndex = 0;
 
-            //tableLayoutPanel1.Controls.Add(btn_raKeres);
-            tableLayoutPanel1.Controls.Add(rb_lany);
-            tableLayoutPanel1.Controls.Add(rb_fiu);
-            tableLayoutPanel1.Controls.Add(tb_kartya);
-            tableLayoutPanel1.Controls.Add(label10);
-            tableLayoutPanel1.Controls.Add(tb_osztaly);
-            tableLayoutPanel1.Controls.Add(label9, 4, 0);
-            tableLayoutPanel1.Controls.Add(tb_szuletes);
-            tableLayoutPanel1.Controls.Add(label8);
-            tableLayoutPanel1.Controls.Add(label7);
-            tableLayoutPanel1.Controls.Add(tb_taj);
-            tableLayoutPanel1.Controls.Add(label6);
-            tableLayoutPanel1.Controls.Add(tb_lakcim);
-            tableLayoutPanel1.Controls.Add(label5);
-            tableLayoutPanel1.Controls.Add(tb_nev);
-            tableLayoutPanel1.Controls.Add(label4);
-            tableLayoutPanel1.Controls.Add(tb_om);
-            tableLayoutPanel1.Controls.Add(label3);
-            InitializeComponent();
+            tableLayoutPanel1.Controls.Add(textBox, x, y);
         }
 
         private void kereses_menu(object sender, EventArgs e)
@@ -392,10 +271,11 @@ namespace BMI{
 
         private void vissza(object sender, EventArgs e)
         {
+            Controls.Clear();
             tableLayoutPanel1.Controls.Clear();
-
+            btn_hozzaad.Enabled = true;
             alapGombok();
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }
