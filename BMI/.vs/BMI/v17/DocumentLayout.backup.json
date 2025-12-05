@@ -1,17 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zutasi\\Desktop\\BMI\\",
+  "WorkspaceRootPath": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\zutasi\\desktop\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\Zutasi\\Desktop\\BMI\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\Zutasi\\Desktop\\BMI\\metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,40 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "metodusok.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Desktop\\BMI\\metodusok.cs",
-              "RelativeDocumentMoniker": "metodusok.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Desktop\\BMI\\metodusok.cs",
-              "RelativeToolTip": "metodusok.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "adatBevitel.cs",
+              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeDocumentMoniker": "adatBevitel.cs",
+              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeToolTip": "adatBevitel.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAuwAEBAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T09:30:21.574Z"
+              "WhenOpened": "2025-12-05T09:45:08.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "adatBevitel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
+              "RelativeDocumentMoniker": "adatBevitel.Designer.cs",
+              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
+              "RelativeToolTip": "adatBevitel.Designer.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T09:44:55.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "adatBevitel.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeDocumentMoniker": "adatBevitel.cs",
+              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs [Design]",
+              "RelativeToolTip": "adatBevitel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T09:44:47.541Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "metodusok.cs",
+              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs",
+              "RelativeDocumentMoniker": "metodusok.cs",
+              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs",
+              "RelativeToolTip": "metodusok.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:30:21.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Desktop\\BMI\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Desktop\\BMI\\Form1.cs",
+              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwDQAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwDQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-22T09:00:10.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "adatKiiras.cs",
-              "DocumentMoniker": "C:\\Users\\Zutasi\\Desktop\\BMI\\adatKiiras.cs",
+              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
               "RelativeDocumentMoniker": "adatKiiras.cs",
-              "ToolTip": "C:\\Users\\Zutasi\\Desktop\\BMI\\adatKiiras.cs",
+              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
               "RelativeToolTip": "adatKiiras.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwLAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

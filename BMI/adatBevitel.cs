@@ -23,24 +23,9 @@ namespace BMI{
 
             try
             {
-                string masterConnectionString = "Server=localhost;Database=;User ID=root;Password=mysql;";
                 string databaseSql = File.ReadAllText("database.sql");
                 string dataConnectionString = "Server=localhost;Database=BMI_Projekt;User ID=root;Password=mysql;";
-                using (MySqlConnection masterConnection = new MySqlConnection(masterConnectionString))
-                {
-                    masterConnection.Open();
-                    //MySqlCommand setupScript = new MySqlCommand();
-                    //setupScript.CommandText = "DROP DATABASE IF EXISTS BMI_Projekt; CREATE DATABASE IF NOT EXISTS BMI_Projekt;";
-                    //setupScript.ExecuteNonQuery();
-
-                    using (MySqlCommand command = new MySqlCommand("DROP DATABASE IF EXISTS BMI_Projekt; CREATE DATABASE IF NOT EXISTS BMI_Projekt;", masterConnection))
-                    {
-                        command.ExecuteNonQuery();
-                    }
-
-                    masterConnection.Close();
-
-                }
+                
                 using (MySqlConnection connection = new MySqlConnection(dataConnectionString))
                 {
                     connection.Open();
@@ -155,6 +140,7 @@ namespace BMI{
         }
         
         public System.Windows.Forms.Button button = new System.Windows.Forms.Button();
+        System.Windows.Forms.ComboBox comboBox = new System.Windows.Forms.ComboBox();
 
         private void hozzaad_menu(object sender, EventArgs e)
         {
@@ -174,7 +160,15 @@ namespace BMI{
             textbox_hozzaad("3taj", 4, 3, true);
 
             label_hozzaad("Nem:", 3, 4);
-            textbox_hozzaad("4nem", 4, 4, true);
+            comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            comboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            comboBox.FormattingEnabled = true;
+            comboBox.Items.AddRange(new object[] {
+            "Férfi",
+            "Nő",
+            "Nem kívánom megadni"});
+            comboBox.Name = "comboBox";
+            tableLayoutPanel1.Controls.Add(comboBox,4,4);
             
             label_hozzaad("Születési dátum:", 3, 5);
             textbox_hozzaad("5szuletes", 4, 5, true);
@@ -197,52 +191,42 @@ namespace BMI{
             button.Enabled = false;
 
             tableLayoutPanel1.Controls.Add(button, 2, 8);
-            // 
-            // btn_raKeres
-            //
-            /*
-            btn_raKeres.Location = new System.Drawing.Point(502, 204);
-            btn_raKeres.Name = "btn_raKeres";
-            btn_raKeres.Size = new System.Drawing.Size(91, 38);
-            btn_raKeres.TabIndex = 1;
-            btn_raKeres.Text = "Rákeres";
-            btn_raKeres.UseVisualStyleBackColor = true;*/
-
-            /*
-                        // 
-                        // rb_fiu
-                        // 
-                        rb_fiu.AutoSize = true;
-                        rb_fiu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-                        rb_fiu.Location = new System.Drawing.Point(906, 314);
-                        rb_fiu.Name = "rb_fiu";
-                        rb_fiu.Size = new System.Drawing.Size(72, 33);
-                        rb_fiu.TabIndex = 16;
-                        rb_fiu.TabStop = true;
-                        rb_fiu.Text = "Fiú";
-                        rb_fiu.UseVisualStyleBackColor = true;
-                        // 
-                        // rb_lany
-                        // 
-                        rb_lany.AutoSize = true;
-                        rb_lany.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-                        rb_lany.Location = new System.Drawing.Point(984, 314);
-                        rb_lany.Name = "rb_lany";
-                        rb_lany.Size = new System.Drawing.Size(88, 33);
-                        rb_lany.TabIndex = 17;
-                        rb_lany.TabStop = true;
-                        rb_lany.Text = "Lány";
-                        rb_lany.UseVisualStyleBackColor = true;
-            */
         }
         private void hozzaad(object sender, EventArgs e)
         {
+            if (comboBox.SelectedIndex != -1) 
+            {
+                argumentumok[4] = (string)comboBox.SelectedItem;
+            }
+            else {
+                MessageBox.Show("Kérem válasszon ki egy nemet!");
+                return; }
             try
             {
+                Random random = new Random();
+                int tmp = random.Next(1, 5);
+                string output = string.Empty;
+                output += random.Next(0, 10);
+                output += random.Next(0, 10);
+                output += random.Next(0, 10);
+
+                foreach (var item in argumentumok[1])
+                {
+                    output += cipher(item, tmp);
+                }
+                //MessageBox.Show(output);
+
                 string dataConnectionString = "Server=localhost;Database=BMI_Projekt;User ID=root;Password=mysql;";
                 using (MySqlConnection connection = new MySqlConnection(dataConnectionString))
                 {
                     connection.Open();
+
+                    string prompt = $"INSERT INTO `kartya` (`UID`, `kartyaTipus`) VALUES ('{output}', '{argumentumok[7]}');";
+
+                    using (var cmd = new MySqlCommand(prompt, connection))
+                    { 
+                        cmd.ExecuteNonQuery();
+                    }
 
                     string query = @"
                         INSERT INTO szemelyek
@@ -259,7 +243,7 @@ namespace BMI{
                         cmd.Parameters.AddWithValue("@c5", argumentumok[4]);
                         cmd.Parameters.AddWithValue("@c6", argumentumok[5]);
                         cmd.Parameters.AddWithValue("@c7", argumentumok[6]);
-                        cmd.Parameters.AddWithValue("@c8", argumentumok[7]);
+                        cmd.Parameters.AddWithValue("@c8", output);
 
                         //MessageBox.Show(cmd.CommandText);
                         cmd.ExecuteNonQuery();
@@ -270,7 +254,7 @@ namespace BMI{
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hiba az adatbevitel alatt!" + ex);
+                MessageBox.Show("Hiba az adatbevitel alatt!\n" + ex.ToString().Split('\n')[0]);
             }
         }
 
@@ -316,7 +300,7 @@ namespace BMI{
         {
             var textBox = sender as System.Windows.Forms.TextBox;
             
-            if (textBox.Text.Length > 2)
+            if (textBox.Text.Length > 1)
             {
                 //MessageBox.Show(textBox.Text.Length + " " + count);
                 if (!textBoxes.Contains(textBox.Name)) { 
@@ -325,12 +309,12 @@ namespace BMI{
                 }
                 argumentumok[Convert.ToInt16(textBox.Name[0].ToString())] = textBox.Text;
             }
-            else if (textBox.Text.Length == 0 && textBoxes.Contains(textBox.Name))
+            else if (textBox.Text.Length <= 0 && textBoxes.Contains(textBox.Name))
             {
                 textBoxes.Remove(textBox.Name);
                 count--;
             }
-            if (count == 8)
+            if (count == 7)
             {
                 button.Enabled = true;
             }
@@ -353,6 +337,33 @@ namespace BMI{
             btn_hozzaad.Enabled = true;
             alapGombok();
             //InitializeComponent();
+        }
+
+        public static char cipher(char ch, int key)
+        {
+            if (!char.IsLetter(ch))
+            {
+
+                return ch;
+            }
+
+            char d = char.IsUpper(ch) ? 'A' : 'a';
+            return (char)((((ch + key) - d) % 26) + d);
+
+            //
+            // Caesar kódolás a kártya UID-k-hoz, lusta vagyok megcsinálni a hexadecimálisat
+            //
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*
+            if (comboBox1.SelectedIndex == 0)
+            {
+                alapGombok();
+                hozzaad_menu();
+            }
+            */
         }
     }
 }

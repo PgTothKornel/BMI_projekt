@@ -124,6 +124,6 @@ C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.Form1.resources
 C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.Properties.Resources.resources
 C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.GenerateResource.cache
 C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.CoreCompileInputs.cache
-C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.CopyComplete
 C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.exe
 C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.pdb
+C:\Users\toge7\Documents\GitHub\BMI_projekt\BMI\obj\Debug\BMI.csproj.Up2Date
