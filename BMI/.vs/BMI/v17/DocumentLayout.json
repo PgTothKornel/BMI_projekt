@@ -15,16 +15,16 @@
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:metodusok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "adatBevitel.cs",
               "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
               "RelativeToolTip": "adatBevitel.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAuwNkAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAFABAAAAAAAAAAAMwFQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T09:45:08.646Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "adatBevitel.Designer.cs",
               "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
               "RelativeToolTip": "adatBevitel.Designer.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T09:44:55.666Z",
               "EditorCaption": ""
@@ -76,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "metodusok.cs",
               "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\metodusok.cs",
               "RelativeDocumentMoniker": "metodusok.cs",
@@ -89,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -102,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "adatKiiras.cs",
               "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
               "RelativeDocumentMoniker": "adatKiiras.cs",
               "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
               "RelativeToolTip": "adatKiiras.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwLAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-22T08:38:29.995Z",
               "EditorCaption": ""
