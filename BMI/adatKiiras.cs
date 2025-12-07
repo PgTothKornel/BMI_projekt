@@ -180,6 +180,34 @@ namespace BMI{
             dataGridView1.Width = content.Width - 50;
             dataGridView1.Height = content.Height - 200;
         }
+        public static void hibaUzenet(string uzenet, Exception ex)
+        {
+            string hibaszoveg = "";
+            if (ex != null)
+                hibaszoveg = ex.Message;
+            else
+                hibaszoveg = "Ismeretlen hiba.";
+
+            MessageBox.Show(
+                uzenet + "\n\nHiba részletei:\n" + hibaszoveg,
+                "Hiba történt",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            );
+
+            try
+            {
+                string logSor =
+                    DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") +
+                    " - " + uzenet +
+                    " - " + hibaszoveg + "\n";
+
+                System.IO.File.AppendAllText("errors.log", logSor);
+            }
+            catch
+            {
+            }
+        }
         private void adatKiiras_Load(object sender, EventArgs e){
             BeallitSzemelyekTablaFejlec();
             LoadSzemelyek();
