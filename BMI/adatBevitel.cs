@@ -19,8 +19,11 @@ namespace BMI{
         public adatBevitel()
         {
             InitializeComponent();
-            alapGombok();
+            input_generalas();
 
+            comboBox.TextChanged += new System.EventHandler(text_nullazas);
+
+            /*
             try
             {
                 string databaseSql = File.ReadAllText("database.sql");
@@ -42,9 +45,13 @@ namespace BMI{
             {
                 MessageBox.Show("Hiba az adatbázis inicializálásakor! Kérjük, ellenőrizze a MySQL szerver futását, vagy az internetkapcsolatot." + ex);
             }
-
+            */
         }
 
+        private void text_nullazas(object sender, EventArgs e)
+        {
+            comboBox.Text = "";
+        }
         private void alapGombok()
         {
             
@@ -57,7 +64,8 @@ namespace BMI{
             // btn_exit
             // 
             btn_exit.Dock = System.Windows.Forms.DockStyle.Fill;
-            btn_exit.BackColor = System.Drawing.Color.Red;
+            btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
+            btn_exit.BackColor = System.Drawing.Color.Crimson;
             btn_exit.Location = new System.Drawing.Point(700, 400);
             btn_exit.Name = "btn_exit";
             btn_exit.Size = new System.Drawing.Size(91, 38);
@@ -65,10 +73,13 @@ namespace BMI{
             btn_exit.Text = "Kilépés";
             btn_exit.UseVisualStyleBackColor = false;
             btn_exit.Click += new System.EventHandler(kilepes);
+            btn_exit.FlatStyle = FlatStyle.Flat;
+            btn_exit.Cursor = Cursors.No;
             // 
             // btn_vissza
             // 
             btn_vissza.Location = new System.Drawing.Point(1000, 642);
+            btn_vissza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
             btn_vissza.Name = "btn_vissza";
             btn_vissza.Size = new System.Drawing.Size(91, 38);
             btn_vissza.TabIndex = 1;
@@ -76,6 +87,8 @@ namespace BMI{
             btn_vissza.UseVisualStyleBackColor = true;
             btn_vissza.Click += new System.EventHandler(vissza);
             btn_vissza.Dock = System.Windows.Forms.DockStyle.Fill;
+            btn_vissza.FlatStyle = FlatStyle.Flat;
+            btn_vissza.Cursor = Cursors.Cross;
 
             tableLayoutPanel1.Controls.Add(btn_exit, 0 , 8);
             tableLayoutPanel1.Controls.Add(btn_vissza, 1, 8);
@@ -98,7 +111,7 @@ namespace BMI{
             // btn_hozzaad
             // 
             btn_hozzaad.Dock = System.Windows.Forms.DockStyle.Fill;
-            btn_hozzaad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            btn_hozzaad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, FontStyle.Bold);
             btn_hozzaad.Name = "btn_hozzaad";
             btn_hozzaad.TabIndex = 0;
             btn_hozzaad.Text = "Új ember hozzáadása";
@@ -108,11 +121,12 @@ namespace BMI{
             btn_hozzaad.FlatStyle = FlatStyle.Flat;
             btn_hozzaad.ForeColor = Color.White;
             btn_hozzaad.FlatAppearance.BorderSize = 0;
+            btn_hozzaad.Cursor = Cursors.Hand;
 
             // 
             // btn_kereses
             // 
-            btn_kereses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            btn_kereses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, FontStyle.Bold);
             btn_kereses.Name = "btn_kereses";
             btn_kereses.TabIndex = 1;
             btn_kereses.Text = "Adat módosítás egy embernél";
@@ -123,11 +137,12 @@ namespace BMI{
             btn_kereses.FlatStyle = FlatStyle.Flat;
             btn_kereses.ForeColor = Color.White;
             btn_kereses.FlatAppearance.BorderSize = 0;
+            btn_kereses.Cursor = Cursors.Hand;
 
             //
             // btn_meres
             //
-            btn_meres.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            btn_meres.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, FontStyle.Bold);
             btn_meres.FlatStyle = FlatStyle.Flat;
             btn_meres.Name = "btn_kereses";
             btn_meres.TabIndex = 1;
@@ -138,6 +153,7 @@ namespace BMI{
             btn_meres.BackColor = Color.FromArgb(52, 58, 64);
             btn_meres.ForeColor = Color.White;
             btn_meres.FlatAppearance.BorderSize = 0;
+            btn_meres.Cursor = Cursors.Hand;
 
             tableLayoutPanel3.Controls.Add(btn_kereses, 0, 1);
             tableLayoutPanel3.Controls.Add(btn_meres, 0, 2);
@@ -146,11 +162,12 @@ namespace BMI{
         
         public System.Windows.Forms.Button button = new System.Windows.Forms.Button();
         System.Windows.Forms.ComboBox comboBox = new System.Windows.Forms.ComboBox();
-
+         
         public int current = 0;
         public int alapgombokAktivak = 0;
         private void hozzaad_menu(object sender, EventArgs e)
-        { 
+        {
+            comboBox.SelectedIndex = -1;
             if (current == 1)
             {
                 return;
@@ -204,13 +221,13 @@ namespace BMI{
             textbox_hozzaad("7kartya", 2, 7, true);
 
             button.Dock = System.Windows.Forms.DockStyle.Fill;
-            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            button.Location = new System.Drawing.Point(18, 158);
+            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
             button.Name = "btn_add";
-            button.Size = new System.Drawing.Size(322, 140);
-            button.TabIndex = 0;
             button.Text = "Hozzáadás";
-            button.UseVisualStyleBackColor = true;
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 1;
+            button.FlatAppearance.BorderColor = Color.Black;
+            button.Cursor = Cursors.Hand;
             button.Click += new System.EventHandler(hozzaad);
             button.Click -= new System.EventHandler(mer);
             button.Click -= new System.EventHandler(modosit);
@@ -247,6 +264,21 @@ namespace BMI{
                 {
                     connection.Open();
 
+                    string check = $"SELECT * FROM szemelyek WHERE OM = {argumentumok[0]};";
+
+                    using (var cmd = new MySqlCommand(check, connection))
+                    {
+                        MySqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Már létezik ilyen OM azonosítójú diák!");
+
+                            return;
+                        }
+                        reader.Close();
+                    }
+
                     string prompt = $"INSERT INTO `kartya` (`UID`, `kartyaTipus`) VALUES ('{output}', '{argumentumok[7]}');";
 
                     using (var cmd = new MySqlCommand(prompt, connection))
@@ -276,6 +308,7 @@ namespace BMI{
                     }
                     connection.Close();
 
+                    MessageBox.Show("A személy sikeresen hozzá lett adva!");
                 }
             }
             catch (Exception ex)
@@ -314,15 +347,50 @@ namespace BMI{
             textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             textBox.Name = nev.Replace(" ", "_");
             textBox.TabIndex = 0;
+            textBox.BorderStyle = BorderStyle.FixedSingle;
+
             if (fontos)
             {
                 textBox.TextChanged += new System.EventHandler(szamlalo);
+            }
+            if (x > 10)
+            {
+                x -= 10;
+                textBox.TextChanged += new System.EventHandler(max);
             }
 
             tableLayoutPanel1.Controls.Add(textBox, x, y);
         }
 
-
+        private void max(object sender, EventArgs e)
+        {
+            var textBox = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                if (Convert.ToInt16(textBox.Text) <= 0)
+                {
+                    textBox.Text = "";
+                }
+                else if (Convert.ToInt16(textBox.Text) > 99 && textBox.Name == "1testzsir")
+                {
+                    textBox.Text = "";
+                    MessageBox.Show("A test-zsír százalék nem lehet 100, vagy annál több!");
+                }
+                else if (Convert.ToInt16(textBox.Text) >= 400 && textBox.Name == "2magassag")
+                {
+                    textBox.Text = "";
+                    MessageBox.Show("A magasság nem lehet 400cm, vagy annál több!");
+                }
+                else if (Convert.ToInt16(textBox.Text) >= 260 && textBox.Name == "3suly")
+                {
+                    textBox.Text = "";
+                    MessageBox.Show("A súly nem lehet 260kg, vagy annál több!");
+                }
+            }
+            catch { 
+                textBox.Text = "";
+            }
+        }
         public int count = 0;
 
         public HashSet<string> textBoxes = new HashSet<string>();
@@ -332,7 +400,7 @@ namespace BMI{
         {
             var textBox = sender as System.Windows.Forms.TextBox;
             
-            if (textBox.Text.Length > 1)
+            if (textBox.Text.Length > 0)
             {
                 //MessageBox.Show(textBox.Text.Length + " " + count);
                 if (!textBoxes.Contains(textBox.Name)) { 
@@ -346,11 +414,23 @@ namespace BMI{
                 textBoxes.Remove(textBox.Name);
                 count--;
             }
-            if (count == (current == 3 ? 4 : 7))
+            switch (current)
             {
-                button.Enabled = true;
+                case 1:
+                    if (count == 7) button.Enabled = true;
+                    else button.Enabled = false;
+                    break;
+                case 2:
+                    if (count == 6) button.Enabled = true;
+                    else button.Enabled = false;
+                    break;
+                case 3:
+                    if (count == 4) button.Enabled = true;
+                    else button.Enabled = false;
+                    break;
+                default:
+                    break;
             }
-            else { button.Enabled = false; }
         }
         private void kereses_menu(object sender, EventArgs e)
         {
@@ -364,6 +444,7 @@ namespace BMI{
                 textBoxes.Clear();
             }
             tableLayoutPanel1.Controls.Clear();
+            comboBox.SelectedIndex = -1;
 
             alapGombok();
 
@@ -400,17 +481,19 @@ namespace BMI{
             label_hozzaad("Osztály", 1, 6);
             textbox_hozzaad("6osztaly", 2, 6, true);
 
+            /*
             label_hozzaad("Kártya Típus", 1, 7);
             textbox_hozzaad("7kartya", 2, 7, true);
+            */
 
             button.Dock = System.Windows.Forms.DockStyle.Fill;
-            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            button.Location = new System.Drawing.Point(18, 158);
-            button.Name = "btn_add";
-            button.Size = new System.Drawing.Size(322, 140);
-            button.TabIndex = 0;
+            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
+            button.Name = "btn_modify";
             button.Text = "Módosítás";
-            button.UseVisualStyleBackColor = true;
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 1;
+            button.FlatAppearance.BorderColor = Color.Black;
+            button.Cursor = Cursors.Hand;
             button.Click += new System.EventHandler(modosit);
             button.Click -= new System.EventHandler(hozzaad);
             button.Click -= new System.EventHandler(mer);
@@ -432,6 +515,7 @@ namespace BMI{
             }
             try
             {
+                /*
                 Random random = new Random();
                 int tmp = random.Next(1, 5);
                 string output = string.Empty;
@@ -442,7 +526,7 @@ namespace BMI{
                 foreach (var item in argumentumok[1])
                 {
                     output += cipher(item, tmp);
-                }
+                }*/
                 //MessageBox.Show(output);
 
                 string dataConnectionString = "Server=localhost;Database=BMI_Projekt;User ID=root;Password=mysql;";
@@ -471,7 +555,7 @@ namespace BMI{
                         */
                     }
 
-                    MessageBox.Show("siker!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                    MessageBox.Show("Személy adatai sikeresen módosítva!");
 
                     string query = @"
                         UPDATE szemelyek
@@ -481,17 +565,16 @@ namespace BMI{
                             TAJ = @c4,
                             nem = @c5,
                             szuletesiDatum = @c6,
-                            osztaly = @c7,
-                            kartya = @c8
+                            osztaly = @c7
                         WHERE OM = @c1;
                         ";
-
+                    /*
                     string prompt = $"INSERT INTO `kartya` (`UID`, `kartyaTipus`) VALUES ('{output}', '{argumentumok[7]}');";
 
                     using (var cmd = new MySqlCommand(prompt, connection))
                     {
                         cmd.ExecuteNonQuery();
-                    }
+                    }*/
 
                     using (var cmd = new MySqlCommand(query, connection))
                     {
@@ -502,7 +585,7 @@ namespace BMI{
                         cmd.Parameters.AddWithValue("@c5", argumentumok[4]);
                         cmd.Parameters.AddWithValue("@c6", argumentumok[5]);
                         cmd.Parameters.AddWithValue("@c7", argumentumok[6]);
-                        cmd.Parameters.AddWithValue("@c8", output);
+                        //cmd.Parameters.AddWithValue("@c8", output);
 
                         //MessageBox.Show(cmd.CommandText);
                         cmd.ExecuteNonQuery();
@@ -541,26 +624,28 @@ namespace BMI{
             textbox_hozzaad("0om", 2, 0, true);
 
             label_hozzaad("A személy test-zsír százaléka:", 1, 1);
-            textbox_hozzaad("1testzsir", 2, 1, true);
+            textbox_hozzaad("1testzsir", 12, 1, true);
 
             label_hozzaad("A személy magassága:", 1, 2);
-            textbox_hozzaad("2magassag", 2, 2, true);
+            textbox_hozzaad("2magassag", 12, 2, true);
 
             label_hozzaad("A személy súlya:", 1, 3);
-            textbox_hozzaad("3suly", 2, 3, true);
+            textbox_hozzaad("3suly", 12, 3, true);
 
             button.Dock = System.Windows.Forms.DockStyle.Fill;
-            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            button.Name = "btn_add";
-            button.TabIndex = 0;
-            button.Text = "Hozzáadás";
-            button.UseVisualStyleBackColor = true;
+            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
+            button.Name = "btn_mer";
+            button.Text = "Rögzítés";
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 1;
+            button.FlatAppearance.BorderColor = Color.Black;
+            button.Cursor = Cursors.Hand;
             button.Click += new System.EventHandler(mer);
             button.Click -= new System.EventHandler(hozzaad);
             button.Click -= new System.EventHandler(modosit);
             button.Enabled = false;
 
-            tableLayoutPanel1.Controls.Add(button, 2, 4);
+            tableLayoutPanel1.Controls.Add(button, 2, 8);
         }
 
         private void mer(object sender, EventArgs e)
@@ -604,7 +689,7 @@ namespace BMI{
                         cmd.ExecuteNonQuery();
                     }
                     connection.Close();
-
+                    MessageBox.Show("Mérés sikeresen rögzítve!");
                 }
             }
             catch (Exception ex)
@@ -632,7 +717,6 @@ namespace BMI{
         {
             if (!char.IsLetter(ch))
             {
-
                 return ch;
             }
 
