@@ -12,6 +12,9 @@ using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
+using Google.Protobuf.WellKnownTypes;
+using K4os.Compression.LZ4.Internal;
+using Mysqlx.Crud;
 
 namespace BMI{
     public partial class adatBevitel : Form{
@@ -310,6 +313,8 @@ namespace BMI{
 
                     MessageBox.Show("A személy sikeresen hozzá lett adva!");
                 }
+
+                mentes();
             }
             catch (Exception ex)
             {
@@ -598,6 +603,8 @@ namespace BMI{
             {
                 MessageBox.Show("Hiba az adatmódosítás alatt!\n" + ex.ToString().Split('\n')[0]);
             }
+
+            mentes();
         }
 
         private void meres_menu(object sender, EventArgs e)
@@ -696,6 +703,7 @@ namespace BMI{
             {
                 MessageBox.Show("Hiba a mérés rögzítése alatt!\n" + ex.ToString().Split('\n')[0]);
             }
+            mentes();
         }
 
         private void kilepes(object sender, EventArgs e)
@@ -713,6 +721,83 @@ namespace BMI{
             //InitializeComponent();
         }
 
+        private void mentes()
+        {
+            string dataConnectionString = "Server=localhost;Database=BMI_Projekt;User ID=root;Password=mysql;";
+
+            StreamWriter sw = new StreamWriter("adatok.sql", false);
+            
+            sw.WriteLine("DELETE FROM meresek;");
+            sw.WriteLine("DELETE FROM szemelyek;");
+            sw.WriteLine("DELETE FROM kartya;");
+            sw.WriteLine();
+            sw.WriteLine("INSERT INTO kartya (`UID`, `kartyaTipus`) VALUES");
+            using (MySqlConnection connection = new MySqlConnection(dataConnectionString))
+            {
+                connection.Open();
+
+                string check = $"SELECT * FROM kartya;";
+
+                using (var cmd = new MySqlCommand(check, connection))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    int comma = 0;
+                    while (reader.Read())
+                    {
+                        string line = $"{(comma == 1 ? "," : "")}(\'{reader.GetValue(0).ToString()}\', \'{reader.GetValue(1).ToString()}\')";
+                        comma = 1;    
+                        sw.WriteLine(line);
+                    }
+                    sw.WriteLine(";\n");
+                    reader.Close();
+                }
+                
+                
+                sw.WriteLine("INSERT INTO szemelyek(`OM`, `nev`, `lakcim`, `TAJ`, `nem`, `szuletesiDatum`, `osztaly`, `kartya`) VALUES");
+
+                check = $"SELECT * FROM szemelyek;";
+
+                using (var cmd = new MySqlCommand(check, connection))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    int comma = 0;
+                    while (reader.Read())
+                    {
+                        string date = reader.GetValue(5).ToString().Replace(". ", "-");
+                        //MessageBox.Show(date);
+                        string line = $"{(comma == 1 ? "," : "")}(\'{reader.GetValue(0).ToString()}\', \'{reader.GetValue(1).ToString()}\', \'{reader.GetValue(2).ToString()}\', \'{reader.GetValue(3).ToString()}\', \'{reader.GetValue(4).ToString()}\', \'{date}\', \'{reader.GetValue(6).ToString()}\', \'{reader.GetValue(7).ToString()}\')";
+                        comma = 1;
+                        sw.WriteLine(line);
+                    }
+                    sw.WriteLine(";\n");
+                    reader.Close();
+                }
+
+
+                sw.WriteLine("INSERT INTO meresek (`szemely`, `testzsir%`, `magassag`, `suly`, `datum`) VALUES");
+
+                check = $"SELECT * FROM meresek;";
+
+                using (var cmd = new MySqlCommand(check, connection))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    int comma = 0;
+                    while (reader.Read())
+                    {
+                        string date = reader.GetValue(5).ToString().Replace(". ", "-");
+                        //MessageBox.Show(date);
+                        string line = $"{(comma == 1 ? "," : "")}(\'{reader.GetValue(1).ToString()}\', \'{reader.GetValue(2).ToString()}\', \'{reader.GetValue(3).ToString()}\', \'{reader.GetValue(4).ToString()}\', \'{date}\')";
+                        comma = 1;
+                        sw.WriteLine(line);
+                    }
+                    sw.WriteLine(";\n");
+                    reader.Close();
+                }
+
+                connection.Close();
+                sw.Close();
+            }
+            }
         public static char cipher(char ch, int key)
         {
             if (!char.IsLetter(ch))

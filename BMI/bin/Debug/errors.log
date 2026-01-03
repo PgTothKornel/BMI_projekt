@@ -8,3 +8,18 @@
 2025-11-22 19:39:10 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
 2025-12-07 06:00:26 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
 2026-01-03 10:35:25 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
+2026-01-03 13:55:21 - Adatbázis inicializálási hiba! - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',('0412DD9833, tanulói)
+('0444BC6721, tanulói)
+('045533AA12, tanulói)
+('04' at line 2
+2026-01-03 13:59:22 - Adatbázis inicializálási hiba! - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0444BC6721, tanulói)
+,('045533AA12, tanulói)
+,('0456AB89EF, tanulói)
+,('04' at line 3
+2026-01-03 14:03:19 - Adatbázis inicializálási hiba! - Incorrect datetime value: '2007. 04. 12. 0:00:00' for column 'szuletesiDatum' at row 1
+2026-01-03 14:07:35 - Adatbázis inicializálási hiba! - Incorrect datetime value: '2007. 04. 12. 0:00:00' for column 'szuletesiDatum' at row 1
+2026-01-03 14:15:03 - Adatbázis inicializálási hiba! - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '6', '25', '165', '63)
+,('3', '9', '16', '170', '58)
+,('4', '10', '28', '1' at line 3
+2026-01-03 14:15:48 - Adatbázis inicializálási hiba! - Incorrect datetime value: '74' for column 'datum' at row 1
+2026-01-03 14:18:32 - Adatbázis inicializálási hiba! - Incorrect datetime value: '74' for column 'datum' at row 1
