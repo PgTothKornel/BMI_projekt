@@ -3,7 +3,8 @@ DELETE FROM szemelyek;
 DELETE FROM kartya;
 
 INSERT INTO kartya (`UID`, `kartyaTipus`) VALUES
-('0412DD9833', 'tanulói')
+('036Perxsw Oevjmsp', 'Senki')
+,('0412DD9833', 'tanulói')
 ,('0444BC6721', 'tanulói')
 ,('045533AA12', 'tanulói')
 ,('0456AB89EF', 'tanulói')
@@ -13,6 +14,7 @@ INSERT INTO kartya (`UID`, `kartyaTipus`) VALUES
 ,('04A1B2C3D4', 'tanulói')
 ,('04CAF31289', 'tanulói')
 ,('04DDAA7611', 'tanulói')
+,('729Perxsw Oevjmsp', 'Senki')
 ;
 
 INSERT INTO szemelyek(`OM`, `nev`, `lakcim`, `TAJ`, `nem`, `szuletesiDatum`, `osztaly`, `kartya`) VALUES
@@ -26,6 +28,7 @@ INSERT INTO szemelyek(`OM`, `nev`, `lakcim`, `TAJ`, `nem`, `szuletesiDatum`, `os
 ,('8', 'Fekete Zsófia', 'Izsák, Béke u. 2.', '357159486', 'nő', '2007-07-27-0:00:00', '11', '0466BBA120')
 ,('9', 'Molnár Bence', 'Kiskunhalas, Kőrösi út 7.', '258369147', 'férfi', '2009-11-05-0:00:00', '9', '0477CC8934')
 ,('10', 'Lakatos Emese', 'Kiskőrös, Szent István u. 6.', '654987321', 'nő', '2008-03-14-0:00:00', '10', '04DDAA7611')
+,('11', 'Lakatos Karfiol', 'Orkovány', '123321', 'Férfi', '1301-12-12-0:00:00', '1', '036Perxsw Oevjmsp')
 ;
 
 INSERT INTO meresek (`szemely`, `magassag`, `suly`, `datum`) VALUES
@@ -52,5 +55,6 @@ INSERT INTO meresek (`szemely`, `magassag`, `suly`, `datum`) VALUES
 ,('6', '165', '61', '2024-07-01-0:00:00')
 ,('6', '165', '60', '2024-08-01-0:00:00')
 ,('6', '165', '59', '2024-09-01-0:00:00')
+,('1', '150', '160', '2026-01-12-10:28:19')
 ;
 

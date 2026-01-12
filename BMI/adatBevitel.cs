@@ -429,7 +429,7 @@ namespace BMI{
                     else button.Enabled = false;
                     break;
                 case 3:
-                    if (count == 4) button.Enabled = true;
+                    if (count == 3) button.Enabled = true;
                     else button.Enabled = false;
                     break;
                 default:
@@ -474,8 +474,7 @@ namespace BMI{
             comboBox.FormattingEnabled = true;
             comboBox.Items.AddRange(new object[] {
             "Férfi",
-            "Nő",
-            "Egyéb"});
+            "Nő"});
             comboBox.Name = "comboBox";
             tableLayoutPanel1.Controls.Add(comboBox, 2, 4);
 
@@ -784,9 +783,9 @@ namespace BMI{
                     int comma = 0;
                     while (reader.Read())
                     {
-                        string date = reader.GetValue(5).ToString().Replace(". ", "-");
+                        string date = reader.GetValue(4).ToString().Replace(". ", "-");
                         //MessageBox.Show(date);
-                        string line = $"{(comma == 1 ? "," : "")}(\'{reader.GetValue(1).ToString()}\', \'{reader.GetValue(2).ToString()}\', \'{reader.GetValue(3).ToString()}\', \'{reader.GetValue(4).ToString()}\', \'{date}\')";
+                        string line = $"{(comma == 1 ? "," : "")}(\'{reader.GetValue(1).ToString()}\', \'{reader.GetValue(2).ToString()}\', \'{reader.GetValue(3).ToString()}\', \'{date}\')";
                         comma = 1;
                         sw.WriteLine(line);
                     }
