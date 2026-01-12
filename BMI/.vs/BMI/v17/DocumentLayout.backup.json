@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\",
+  "WorkspaceRootPath": "C:\\Users\\UtasiZalan\\Documents\\GitHub\\BMI_projekt\\BMI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\toge7\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|c:\\users\\utasizalan\\documents\\github\\bmi_projekt\\bmi\\adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatbevitel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|C:\\Users\\UtasiZalan\\Documents\\GitHub\\BMI_projekt\\BMI\\adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467AAFDA-E765-4D32-A243-F0738CC9AEF2}|BMI.csproj|solutionrelative:adatkiiras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "adatBevitel.cs",
-              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
-              "RelativeDocumentMoniker": "adatBevitel.cs",
-              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
-              "RelativeToolTip": "adatBevitel.cs",
-              "ViewState": "AgIAAOwCAAAAAAAAAAAcwBMDAAAaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "adatKiiras.cs",
+              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeDocumentMoniker": "adatKiiras.cs",
+              "ToolTip": "C:\\Users\\UtasiZalan\\Documents\\GitHub\\BMI_projekt\\BMI\\adatKiiras.cs",
+              "RelativeToolTip": "adatKiiras.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAQwBIBAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T09:34:49.152Z",
+              "WhenOpened": "2026-01-05T07:36:41.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "adatBevitel.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
-              "RelativeDocumentMoniker": "adatBevitel.Designer.cs",
-              "ToolTip": "C:\\Users\\toge7\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.Designer.cs",
-              "RelativeToolTip": "adatBevitel.Designer.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAiwGAAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "adatBevitel.cs",
+              "DocumentMoniker": "C:\\Users\\UtasiZalan\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeDocumentMoniker": "adatBevitel.cs",
+              "ToolTip": "C:\\Users\\UtasiZalan\\Documents\\GitHub\\BMI_projekt\\BMI\\adatBevitel.cs",
+              "RelativeToolTip": "adatBevitel.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAwwNMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T09:34:38.774Z",
+              "WhenOpened": "2026-01-03T09:34:49.152Z",
               "EditorCaption": ""
             }
           ]

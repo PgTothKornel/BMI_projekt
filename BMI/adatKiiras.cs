@@ -252,10 +252,27 @@ namespace BMI{
                     Meres m = new Meres();
                     m.Id = reader.GetInt64("id");
                     m.SzemelyOM = reader.GetInt64("szemely");
-                    m.TestzsirSzazalek = reader.GetDouble("testzsir%");
                     m.MagassagCm = reader.GetDouble("magassag");
                     m.SulyKg = reader.GetDouble("suly");
                     m.Datum = reader.GetDateTime("datum");
+
+
+                    int kor = 0;
+                    using (MySqlConnection conn2 = GetConnection())
+                    {
+                        string sql2 = $"SELECT szuletesiDatum FROM szemelyek where OM = {m.SzemelyOM}";
+                        MySqlCommand cmd2 = new MySqlCommand(sql2, conn2);
+                        MySqlDataReader reader2 = cmd2.ExecuteReader();
+                        if (reader2.Read())
+                        {
+                            DateTime szuletesiDatum = reader2.GetDateTime("szuletesiDatum");
+                            kor = DateTime.Now.Year - szuletesiDatum.Year;
+                            if (DateTime.Now.DayOfYear < szuletesiDatum.DayOfYear)
+                                kor--;
+                        }
+                    }
+
+                    m.TestzsirSzazalek = Math.Round(1.2 * SzamolBMI(m.SulyKg, m.MagassagCm) + (0.23 * kor),1);
                     lista.Add(m);
                 }
             }
@@ -378,7 +395,7 @@ namespace BMI{
                 }
             }
         }
-        private double SzamolBMI(double sulyKg, double magassagCm){
+        public static double SzamolBMI(double sulyKg, double magassagCm){
             double m = magassagCm / 100.0;
             if (m <= 0) return 0;
             return sulyKg / (m * m);
@@ -395,7 +412,7 @@ namespace BMI{
             bool ferfi = n.Contains("férfi") || n.Contains("fiú");
             bool no = n.Contains("nő") || n.Contains("lány");
 
-            if (ferfi){
+            if (ferfi || n == "egyéb"){
                 if (tzs > 40) return "Extrém túlsúly";
                 if (tzs > 20) return "Közepes túlsúly";
                 if (tzs > 15) return "Normál";

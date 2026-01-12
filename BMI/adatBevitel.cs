@@ -209,8 +209,7 @@ namespace BMI{
             comboBox.FormattingEnabled = true;
             comboBox.Items.AddRange(new object[] {
             "Férfi",
-            "Nő",
-            "Egyéb"});
+            "Nő"});
             comboBox.Name = "comboBox";
             tableLayoutPanel1.Controls.Add(comboBox,2,4);
             
@@ -376,11 +375,11 @@ namespace BMI{
                 {
                     textBox.Text = "";
                 }
-                else if (Convert.ToInt16(textBox.Text) > 99 && textBox.Name == "1testzsir")
+                /*else if (Convert.ToInt16(textBox.Text) > 99 && textBox.Name == "1testzsir")
                 {
                     textBox.Text = "";
                     MessageBox.Show("A test-zsír százalék nem lehet 100, vagy annál több!");
-                }
+                }*/
                 else if (Convert.ToInt16(textBox.Text) >= 400 && textBox.Name == "2magassag")
                 {
                     textBox.Text = "";
@@ -630,14 +629,12 @@ namespace BMI{
             label_hozzaad("A személy OM azonosítója:", 1, 0);
             textbox_hozzaad("0om", 2, 0, true);
 
-            label_hozzaad("A személy test-zsír százaléka:", 1, 1);
-            textbox_hozzaad("1testzsir", 12, 1, true);
 
-            label_hozzaad("A személy magassága:", 1, 2);
-            textbox_hozzaad("2magassag", 12, 2, true);
+            label_hozzaad("A személy magassága (cm):", 1, 1);
+            textbox_hozzaad("2magassag", 12, 1, true);
 
-            label_hozzaad("A személy súlya:", 1, 3);
-            textbox_hozzaad("3suly", 12, 3, true);
+            label_hozzaad("A személy súlya (kg):", 1, 2);
+            textbox_hozzaad("3suly", 12, 2, true);
 
             button.Dock = System.Windows.Forms.DockStyle.Fill;
             button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
@@ -676,11 +673,14 @@ namespace BMI{
                             return;
                         }
                     }
-
+                    if (int.Parse(argumentumok[2]) < 60) { 
+                        MessageBox.Show("A magasság nem lehet kevesebb, mint 60cm!","Magasság hiba");
+                        return;
+                    }
                     string query = @"
                          INSERT INTO meresek
-                         (szemely, `testzsir%`, magassag, suly, datum)
-                         VALUES (@c2, @c3, @c4, @c5, @c6)
+                         (szemely, magassag, suly, datum)
+                         VALUES (@c2, @c4, @c5, @c6)
                         ";
 
                     using (var cmd = new MySqlCommand(query, connection))
@@ -696,7 +696,7 @@ namespace BMI{
                         cmd.ExecuteNonQuery();
                     }
                     connection.Close();
-                    MessageBox.Show("Mérés sikeresen rögzítve!");
+                    MessageBox.Show("Mérés sikeresen rögzítve!","Siker");
                 }
             }
             catch (Exception ex)
@@ -774,7 +774,7 @@ namespace BMI{
                 }
 
 
-                sw.WriteLine("INSERT INTO meresek (`szemely`, `testzsir%`, `magassag`, `suly`, `datum`) VALUES");
+                sw.WriteLine("INSERT INTO meresek (`szemely`, `magassag`, `suly`, `datum`) VALUES");
 
                 check = $"SELECT * FROM meresek;";
 

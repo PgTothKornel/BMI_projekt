@@ -23,3 +23,5 @@
 ,('4', '10', '28', '1' at line 3
 2026-01-03 14:15:48 - Adatbázis inicializálási hiba! - Incorrect datetime value: '74' for column 'datum' at row 1
 2026-01-03 14:18:32 - Adatbázis inicializálási hiba! - Incorrect datetime value: '74' for column 'datum' at row 1
+2026-01-05 08:14:52 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts
+2026-01-12 07:31:41 - Adatbázis inicializálási hiba! - Unable to connect to any of the specified MySQL hosts

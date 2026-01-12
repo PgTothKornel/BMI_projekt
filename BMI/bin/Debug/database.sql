@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `szemelyek`(
 CREATE TABLE IF NOT EXISTS `meresek`(
     `id` BIGINT  NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `szemely` BIGINT NOT NULL,
-    `testzsir%` BIGINT NOT NULL,
     `magassag` BIGINT NOT NULL,
     `suly` BIGINT NOT NULL,
     `datum` DATETIME NOT NULL
